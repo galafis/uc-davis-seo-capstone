@@ -1,4 +1,4 @@
-# Google Search Engine Optimization (SEO) Capstone Project
+# UC Davis Search Engine Optimization (SEO) Capstone Project
 
 *[English version below / Versão em inglês abaixo]*
 
@@ -6,10 +6,10 @@
 
 ### 📊 Visão Geral
 
-Este projeto representa o trabalho final do **Google Search Engine Optimization (SEO)**, demonstrando competências avançadas na área. A plataforma desenvolvida oferece uma solução completa e funcional.
+Este projeto representa o trabalho final da **UC Davis Search Engine Optimization (SEO) Specialization**, demonstrando competências avançadas na área. A plataforma desenvolvida oferece uma solução completa e funcional para análise e otimização de SEO.
 
 **Desenvolvido por:** Gabriel Demetrios Lafis  
-**Certificação:** Google Search Engine Optimization (SEO)  
+**Certificação:** UC Davis Search Engine Optimization (SEO) Specialization  
 **Tecnologias:** Python, Streamlit, Pandas, Plotly, SQLite
 
 ### 🎯 Características Principais
@@ -70,10 +70,10 @@ Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICEN
 
 ### 📊 Overview
 
-This project represents the capstone work for the **Google Search Engine Optimization (SEO)**, demonstrating advanced competencies in the field. The developed platform offers a complete and functional solution.
+This project represents the capstone work for the **UC Davis Search Engine Optimization (SEO) Specialization**, demonstrating advanced competencies in the field. The developed platform offers a complete and functional solution for SEO analysis and optimization.
 
 **Developed by:** Gabriel Demetrios Lafis  
-**Certification:** Google Search Engine Optimization (SEO)  
+**Certification:** UC Davis Search Engine Optimization (SEO) Specialization  
 **Technologies:** Python, Streamlit, Pandas, Plotly, SQLite
 
 ### 🎯 Key Features
@@ -122,4 +122,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Developed by Gabriel Demetrios Lafis**  
-*Google Search Engine Optimization (SEO) Capstone Project*
+*UC Davis Search Engine Optimization (SEO) Specialization Capstone Project*
