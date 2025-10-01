@@ -1,0 +1,15 @@
+[server]
+headless = true
+port = 8501
+enableCORS = false
+
+[global]
+minCachedMessageSize = 2MB
+maxCachedMessageSize = 20MB
+
+[client]
+showSidebarNavigation = true
+
+[browser]
+gatherUsageStats = false
+

@@ -1,5 +1,21 @@
 # UC Davis Search Engine Optimization (SEO) Specialization Capstone Project
 
+<p align="center">
+  <img src="docs/hero_image.jpg" alt="SEO Analytics Banner" width="700"/>
+</p>
+
+<p align="center">
+  <a href="https://github.com/galafis/uc-davis-seo-capstone/actions/workflows/python-app.yml">
+    <img src="https://github.com/galafis/uc-davis-seo-capstone/actions/workflows/python-app.yml/badge.svg" alt="Python application workflow status">
+  </a>
+  <a href="https://github.com/galafis/uc-davis-seo-capstone/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/galafis/uc-davis-seo-capstone" alt="License: MIT">
+  </a>
+  <a href="https://github.com/galafis/uc-davis-seo-capstone/stargazers">
+    <img src="https://img.shields.io/github/stars/galafis/uc-davis-seo-capstone?style=social" alt="GitHub stars">
+  </a>
+</p>
+
 *[English version below / Versão em inglês abaixo]*
 
 ## 🇧🇷 Português
@@ -35,6 +51,28 @@ Este projeto representa o trabalho final da **UC Davis Search Engine Optimizatio
 | **Analytics** | Pandas | 2.0+ | Análise de dados SEO |
 | **Visualization** | Plotly | 5.15+ | Visualizações de métricas |
 | **APIs** | Google Analytics | v4 | Dados de performance |
+
+### 🏗️ Arquitetura do Sistema
+
+<p align="center">
+  <img src="docs/architecture_diagram.png" alt="Diagrama de Arquitetura do Sistema" width="600"/>
+</p>
+
+```mermaid
+graph TD
+    A[Usuário] --> B(Frontend Streamlit)
+    B --> C{Backend Python}
+    C --> D[Módulo de Auditoria SEO]
+    C --> E[Módulo de Pesquisa de Palavras-chave]
+    C --> F[Módulo de Otimização de Conteúdo]
+    C --> G[Módulo de Análise de Concorrentes]
+    C --> H[Módulo de SEO Local]
+    C --> I[Módulo de SEO Internacional]
+    C --> J[Módulo de Processamento de Dados]
+    J --> K[Base de Dados SQLite]
+    J --> L[APIs Externas Google Analytics]
+    J --> M[Web Scraping BeautifulSoup, Scrapy]
+```
 
 ### 🚀 Começando
 
@@ -119,60 +157,62 @@ python tests/performance_test.py
 
 ### 🏗️ Arquitetura do Sistema
 
-```
-uc-davis-seo-capstone/
-├── src/
-│   ├── main_platform.py          # Aplicação principal
-│   ├── seo_audit.py              # Módulo de auditoria SEO
-│   ├── keyword_research/          # Pesquisa de palavras-chave
-│   ├── content_optimization/      # Otimização de conteúdo
-│   ├── competitor_analysis/       # Análise competitiva
-│   ├── local_seo/                # SEO local
-│   ├── international_seo/        # SEO internacional
-│   └── data_processing/          # Processamento de dados
-├── tests/
-│   ├── test_platform.py         # Testes unitários
-│   ├── performance_test.py       # Testes de performance
-│   └── integration_tests/        # Testes de integração
-├── data/
-│   ├── keywords/                 # Dados de palavras-chave
-│   ├── competitors/              # Dados de concorrentes
-│   └── audit_results/            # Resultados de auditorias
-├── docs/
-│   ├── seo_guide.md             # Guia de SEO
-│   ├── api_documentation.md     # Documentação da API
-│   └── best_practices.md        # Melhores práticas
-└── requirements.txt             # Dependências Python
-```
+    uc-davis-seo-capstone/
+    ├── src/
+    │   ├── main_platform.py          # Aplicação principal
+    │   ├── seo_audit.py              # Módulo de auditoria SEO
+    │   ├── keyword_research/          # Pesquisa de palavras-chave
+    │   ├── content_optimization/      # Otimização de conteúdo
+    │   ├── competitor_analysis/       # Análise competitiva
+    │   ├── local_seo/                # SEO local
+    │   ├── international_seo/        # SEO internacional
+    │   └── data_processing/          # Processamento de dados
+    ├── tests/
+    │   ├── test_platform.py         # Testes unitários
+    │   ├── performance_test.py       # Testes de performance
+    │   └── integration_tests/        # Testes de integração
+    ├── data/
+    │   ├── keywords/                 # Dados de palavras-chave
+    │   ├── competitors/              # Dados de concorrentes
+    │   └── audit_results/            # Resultados de auditorias
+    ├── docs/
+    │   ├── seo_guide.md             # Guia de SEO
+    │   ├── api_documentation.md     # Documentação da API
+    │   └── best_practices.md        # Melhores práticas
+    └── requirements.txt             # Dependências Python
+    
 
 ### 📊 Casos de Uso
 
-#### 1. **Auditoria Completa de Website**
+#### 1\. **Auditoria Completa de Website**
+
 ```python
 from src.seo_audit import SEOAuditor
 
 auditor = SEOAuditor()
-audit_results = auditor.full_audit('https://example.com')
+audit_results = auditor.full_audit("https://example.com")
 technical_issues = auditor.identify_technical_issues(audit_results)
 recommendations = auditor.generate_recommendations(technical_issues)
 ```
 
-#### 2. **Pesquisa de Palavras-chave**
+#### 2\. **Pesquisa de Palavras-chave**
+
 ```python
 from src.keyword_research import KeywordResearcher
 
 researcher = KeywordResearcher()
-keywords = researcher.discover_keywords('digital marketing')
+keywords = researcher.discover_keywords("digital marketing")
 analysis = researcher.analyze_keywords(keywords)
 opportunities = researcher.find_opportunities(analysis)
 ```
 
-#### 3. **Análise de Concorrentes**
+#### 3\. **Análise de Concorrentes**
+
 ```python
 from src.competitor_analysis import CompetitorAnalyzer
 
 analyzer = CompetitorAnalyzer()
-competitors = analyzer.identify_competitors('example.com')
+competitors = analyzer.identify_competitors("example.com")
 gap_analysis = analyzer.content_gap_analysis(competitors)
 strategy = analyzer.create_strategy(gap_analysis)
 ```
@@ -313,7 +353,7 @@ This project represents the capstone work for the **UC Davis Search Engine Optim
 
 **Developed by:** Gabriel Demetrios Lafis  
 **Certification:** UC Davis Search Engine Optimization (SEO) Specialization  
-**Technologies:** Python, Streamlit, Pandas, Plotly, BeautifulSoup, Scrapy, Google Analytics API  
+**Tecnologies:** Python, Streamlit, Pandas, Plotly, BeautifulSoup, Scrapy, Google Analytics API  
 **Focus Area:** SEO Analysis, Keyword Research, Content Optimization, Technical SEO
 
 ### 🎯 Key Features
@@ -338,6 +378,28 @@ This project represents the capstone work for the **UC Davis Search Engine Optim
 | **Analytics** | Pandas | 2.0+ | SEO data analysis |
 | **Visualization** | Plotly | 5.15+ | Metrics visualization |
 | **APIs** | Google Analytics | v4 | Performance data |
+
+### 🏗️ System Architecture
+
+<p align="center">
+  <img src="docs/architecture_diagram.png" alt="System Architecture Diagram" width="600"/>
+</p>
+
+```mermaid
+graph TD
+    A[User] --> B(Streamlit Frontend)
+    B --> C{Python Backend}
+    C --> D[SEO Audit Module]
+    C --> E[Keyword Research Module]
+    C --> F[Content Optimization Module]
+    C --> G[Competitor Analysis Module]
+    C --> H[Local SEO Module]
+    C --> I[International SEO Module]
+    C --> J[Data Processing Module]
+    J --> K[SQLite Database]
+    J --> L[External APIs Google Analytics]
+    J --> M[Web Scraping BeautifulSoup, Scrapy]
+```
 
 ### 🚀 Getting Started
 
