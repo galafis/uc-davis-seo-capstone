@@ -1,55 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UC Davis SEO Capstone Project</title>
+    <title>UC Davis SEO Capstone Project - Gabriel Demetrios Lafis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #004085;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --shadow-light: rgba(0, 0, 0, 0.1);
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-            color: #333;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            box-sizing: border-box;
         }
+
         .container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 960px;
+            width: 90%;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px var(--shadow-light);
+            text-align: center;
         }
-        h1, h2 {
-            color: #0056b3;
+
+        header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
         }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .highlight {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
         a {
-            color: #0056b3;
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+
+        .button-link {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 1.1em;
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.2s ease;
             text-decoration: none;
         }
-        a:hover {
-            text-decoration: underline;
+
+        .button-link:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+
+        .info-box {
+            background-color: #e9f7ef;
+            border-left: 5px solid #28a745;
+            padding: 15px 20px;
+            margin-top: 25px;
+            border-radius: 8px;
+            text-align: left;
+            color: #155724;
+        }
+
+        .info-box p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                margin: 20px auto;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+            .button-link {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>UC Davis SEO Capstone Project</h1>
-        <p>Este é o projeto final da <strong>UC Davis Search Engine Optimization (SEO) Specialization</strong>, desenvolvido por Gabriel Demetrios Lafis.</p>
-        <p>O projeto demonstra competências avançadas em otimização para mecanismos de busca, análise de palavras-chave, otimização on-page e off-page, e estratégias de SEO local e internacional.</p>
-        
-        <h2>Sobre o Aplicativo Streamlit</h2>
-        <p>O coração deste projeto é um aplicativo interativo construído com Streamlit, que oferece uma solução completa para análise, auditoria e otimização de SEO.</p>
-        <p><strong>Importante:</strong> Aplicativos Streamlit são dinâmicos e requerem um servidor Python para serem executados. Eles não podem ser hospedados diretamente no GitHub Pages, que é um serviço para sites estáticos.</p>
-        <p>Para ver o aplicativo em funcionamento, ele precisaria ser implantado em uma plataforma como o <a href="https://streamlit.io/cloud" target="_blank">Streamlit Community Cloud</a> ou um servidor dedicado.</p>
-        
-        <h2>Repositório GitHub</h2>
-        <p>Você pode explorar o código-fonte completo e a documentação detalhada deste projeto no repositório GitHub:</p>
-        <p><a href="https://github.com/galafis/uc-davis-seo-capstone" target="_blank">https://github.com/galafis/uc-davis-seo-capstone</a></p>
+        <header>
+            <h1>UC Davis SEO Capstone Project</h1>
+            <p>Desenvolvido por <span class="highlight">Gabriel Demetrios Lafis</span></p>
+        </header>
 
-        <p>Para executar o aplicativo localmente, siga as instruções de instalação e execução no <code>README.md</code> do repositório.</p>
+        <section>
+            <p>Este projeto representa o trabalho final da <span class="highlight">UC Davis Search Engine Optimization (SEO) Specialization</span>, demonstrando competências avançadas em otimização para mecanismos de busca, análise de palavras-chave, otimização on-page e off-page, e estratégias de SEO local e internacional.</p>
+            <p>A plataforma desenvolvida oferece uma solução completa para análise, auditoria e otimização de SEO.</p>
+            
+            <h2>Sobre o Aplicativo Streamlit</h2>
+            <p>O coração deste projeto é um aplicativo interativo construído com <span class="highlight">Streamlit</span>, que oferece uma solução completa para análise, auditoria e otimização de SEO.</p>
+            
+            <div class="info-box">
+                <p><strong>Importante:</strong> Aplicativos Streamlit são dinâmicos e requerem um servidor Python para serem executados. Eles <span class="highlight">não podem ser hospedados diretamente no GitHub Pages</span>, que é um serviço para sites estáticos.</p>
+                <p>Para ver o aplicativo em funcionamento, ele precisaria ser implantado em uma plataforma como o <a href="https://streamlit.io/cloud" target="_blank">Streamlit Community Cloud</a> ou um servidor dedicado.</p>
+            </div>
+            
+            <h2>Explore o Repositório GitHub</h2>
+            <p>Você pode explorar o código-fonte completo, a documentação detalhada e as instruções para executar o aplicativo localmente no repositório GitHub:</p>
+            <a href="https://github.com/galafis/uc-davis-seo-capstone" target="_blank" class="button-link">Acessar Repositório GitHub</a>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Gabriel Demetrios Lafis. Todos os direitos reservados.</p>
+        </footer>
     </div>
 </body>
 </html>
-
