@@ -6,7 +6,6 @@
 
 <p align="center">
   <a href="https://github.com/galafis/uc-davis-seo-capstone/actions/workflows/python-app.yml">
-    <img src="https://github.com/galafis/uc-davis-seo-capstone/actions/workflows/python-app.yml/badge.svg" alt="Python application workflow status">
   </a>
   <a href="https://github.com/galafis/uc-davis-seo-capstone/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/galafis/uc-davis-seo-capstone" alt="License: MIT">
@@ -181,7 +180,6 @@ python tests/performance_test.py
     │   └── best_practices.md        # Melhores práticas
     └── requirements.txt             # Dependências Python
     
-
 ### 📊 Casos de Uso
 
 #### 1\. **Auditoria Completa de Website**
